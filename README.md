@@ -175,5 +175,5 @@ print(remove_even(y))
 [15, 7,9]
 ```
 
-[![TRY IT YOURSELF](https://img.shields.io/static/v1?label=&message=TRY-IT-YOURSELF&color=<COLOR>)](https://github.com/facesar/python-codes/blob/master/python/remove-odd.ipynb)
+[![TRY IT YOURSELF](https://img.shields.io/static/v1?label=&message=TRY-IT-YOURSELF&color=<COLOR>)](https://github.com/facesar/python_codes/blob/master/pyhon_code/remove-odd.ipynb)
 
