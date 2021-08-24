@@ -177,3 +177,26 @@ print(remove_even(y))
 
 [![TRY IT YOURSELF](https://img.shields.io/static/v1?label=&message=TRY-IT-YOURSELF&color=<COLOR>)](https://github.com/facesar/python_codes/blob/master/pyhon_code/remove-odd.ipynb)
 
+# **example-3:**
+
+## Phone Number Details using Python
+
+To install this Python module on your system, you can use the pip command on your terminal or the command prompt mentioned below:
+```sh
+$ pip install phonenumbers
+```
+There are a lot of details you can find about a number using this Python module. Here’s how you can find some of the basic details about a phone number using Python:
+```sh
+import phonenumbers as ph
+from phonenumbers import carrier
+from phonenumbers import geocoder
+from phonenumbers import timezone
+
+number = "+7912xxxxxxx"
+number = ph.parse(number)
+print(timezone.time_zones_for_number(number))
+print(carrier.name_for_number(number, "en"))
+print(geocoder.description_for_number(number, "en"))
+```
+
+This is how you can use it to find some of the basic details of a phone number. You can read more about this module from [here](https://github.com/facesar/python_codes) to find more complex details about a phone number.
