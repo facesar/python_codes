@@ -1,3 +1,14 @@
+<img alt="Night Coding" src="https://giffiles.alphacoders.com/842/8426.gif" width="250px" align="right"/>
+
+You can find and get examples with code source on these repositories 👀
+
+[![facesar](https://img.shields.io/badge/facesar-click%20here-blue?style=for-the-badge&logo=github)](https://facesar.github.io/)
+
+[![machine-learning](https://img.shields.io/badge/machine_learning-click%20here-blue?style=for-the-badge&logo=python)](https://facesar.github.io/machine-learning-codes/)
+
+[![javascript_codes](https://img.shields.io/badge/javascript_codes-click%20here-blue?style=for-the-badge&logo=javascript)](https://facesar.github.io/roses-javascripts-examples/)
+
+
 # PYTHON ![Python](https://img.shields.io/badge/--0E2447?style=for-the-badge&logo=python&logocolor=white)
 
 Python is a programming language.
