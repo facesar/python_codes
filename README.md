@@ -241,3 +241,43 @@ print(ipaddress)
 This is how easy it is to defang an Ip address using Python. 
 
 [![TRY IT YOURSELF](https://img.shields.io/static/v1?label=&message=TRY-IT-YOURSELF&color=<COLOR>)](https://github.com/facesar/python_codes/blob/master/defang_ip_address/defang_ip_address.ipynb)
+
+# **example-5:**
+## Password Authentication using Python
+
+## What is a Password Authentication System?
+A password authentication system is a system that is used for the identification of a user. Think of it like a login screen that you see while logging in to your Facebook account. It asks for your email or a username and then it asks for your password. If you have entered the correct password then it verifies you as the real user.
+
+<h1 style="color:#B03F3F">To create a password authentication system using Python you have to follow the steps mentioned below:</h1>
+
+- <p>Create a <strong style="color:#B03F3F">dictionary</strong> of usernames with their passwords.</p>
+- Then you have to ask for user input as the username by using the input function in Python.
+- hen you have to use the getpass module in Python to ask for user input as the password. Here we are using the getpass module instead of the input function to make sure that the user doesn’t get to see what he/she write in the password field.
+
+### python code
+```sh
+import getpass
+database = {"cesar.espino": "+79992315462", "espino.cesar": "+79993264879"}
+username = input("Enter your Username: ")
+password = getpass.getpass("Enter your Password: ")
+for i in database.keys():
+    if username == i:
+        while password != database.get(i):
+            password = getpass.getpass("Enter your Password Again: ")
+        break
+
+print("Verified")
+```
+
+### Output
+```sh
+Enter Your Username : aman.kharwal
+Enter Your Password : ··········
+Enter Your Password Again : ··········
+Enter Your Password Again : ··········
+Verified
+```
+
+So this is how we can authenticate the identity of a user by using the Python programming language. Now you can try the same logic with more usernames and other data structures also
+
+[![TRY IT YOURSELF](https://img.shields.io/static/v1?label=&message=TRY-IT-YOURSELF&color=<COLOR>)]()
