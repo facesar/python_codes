@@ -214,4 +214,30 @@ This is how you can use it to find some of the basic details of a phone number. 
 
 # **example-4:**
 
-## Collage Maker using Python
+## Defang IP-Address using python
+
+To convert an IP address to a defanged IP address, we need to replace “.” with ```“[.]”```. During coding interviews, a standard problem for changing an IP address is that you receive a valid IP address, you must return a defanged version of that IP address.
+
+Now let’s see how to write a program to defang an Ip address using Python. Here you simply need to treat “.” as a separator and split the string. Then you have to rejoin an empty string and select ```“[.]”``` as the new separator:
+
+### **python code**
+```sh
+def ip_address(address):
+   new_address = ""
+   split_address = address.split(".")
+   separator = "[.]"
+   new_address = separator.join(split_address)
+   return new_address
+
+ipaddress = new_address(1.1.2.3)
+print(ipaddress)
+```
+
+### Output
+```sh
+1[.]1[.]2[.]3
+```
+
+This is how easy it is to defang an Ip address using Python. 
+
+[![TRY IT YOURSELF](https://img.shields.io/static/v1?label=&message=TRY-IT-YOURSELF&color=<COLOR>)](https://github.com/facesar/python_codes/blob/master/defang_ip_address/defang_ip_address.ipynb)
