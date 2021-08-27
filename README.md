@@ -280,4 +280,4 @@ Verified
 
 So this is how we can authenticate the identity of a user by using the Python programming language. Now you can try the same logic with more usernames and other data structures also
 
-[![TRY IT YOURSELF](https://img.shields.io/static/v1?label=&message=TRY-IT-YOURSELF&color=<COLOR>)]()
+[![TRY IT YOURSELF](https://img.shields.io/static/v1?label=&message=TRY-IT-YOURSELF&color=<COLOR>)](https://github.com/facesar/python_codes/blob/master/defang_ip_address/password_authentication.ipynb)
