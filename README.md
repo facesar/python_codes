@@ -271,7 +271,7 @@ print("Verified")
 
 ### Output
 ```sh
-Enter Your Username : aman.kharwal
+Enter Your Username : cesar.espino
 Enter Your Password : ··········
 Enter Your Password Again : ··········
 Enter Your Password Again : ··········
@@ -281,3 +281,39 @@ Verified
 So this is how we can authenticate the identity of a user by using the Python programming language. Now you can try the same logic with more usernames and other data structures also
 
 [![TRY IT YOURSELF](https://img.shields.io/static/v1?label=&message=TRY-IT-YOURSELF&color=<COLOR>)](https://github.com/facesar/python_codes/blob/master/defang_ip_address/password_authentication.ipynb)
+
+# **Example-6:**
+## Web Scraping to Create a Dataset using Python
+
+The datasets that you find on the internet from various data sources are either created by companies and organizations or are collected from websites. You must have scraped data from web pages by using the Python libraries, but may have stuck while preparing the scraped data to create a dataset. So in this article, I’m going to walk you through a tutorial on web scraping to create a dataset using Python.
+
+
+<h1 style="color:#B03F3F">Below is how we can use the BeautifulSoup library in Python for the task of web scraping to create a dataset:</h1>
+
+### python code 
+```sh 
+import csv
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
+
+html = urlopen("https://en.wikipedia.org/wiki/Comparison_of_programming_languages")
+soup = BeautifulSoup(html, "html.parser")
+table = soup.findAll("table", {"class": "wikitable"})[0]
+rows = table.findAll("tr")
+
+with open("language.csv", "wt+0", newline="", encoding="utf-8", errors="ignore") as f:
+    writer = csv.writer(f)
+    for i in rows:
+        row = []
+        for cell in i.findAll(["td", "th"]):
+            row.append(cell.get_text())
+        writer.writerow(row)
+
+import pandas as pd
+a = pd.read_csv('language.csv', encoding='utf-8')
+a.head()
+```
+### Output
+![setdata](assets/scraping.png)
+
+[![TRY IT YOURSELF](https://img.shields.io/static/v1?label=&message=TRY-IT-YOURSELF&color=<COLOR>)]()
