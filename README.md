@@ -316,4 +316,4 @@ a.head()
 ### Output
 ![setdata](assets/scraping.png)
 
-[![TRY IT YOURSELF](https://img.shields.io/static/v1?label=&message=TRY-IT-YOURSELF&color=<COLOR>)]()
+[![TRY IT YOURSELF](https://img.shields.io/static/v1?label=&message=TRY-IT-YOURSELF&color=<COLOR>)](https://github.com/facesar/python_codes/blob/master/web-scraping-code/web-scraping.ipynb)
