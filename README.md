@@ -317,3 +317,40 @@ a.head()
 ![setdata](assets/scraping.png)
 
 [![TRY IT YOURSELF](https://img.shields.io/static/v1?label=&message=TRY-IT-YOURSELF&color=<COLOR>)](https://github.com/facesar/python_codes/blob/master/web-scraping-code/web-scraping.ipynb)
+
+# **Example-7:**
+## Resume Scanner using Python
+
+### What is a Resume Scanner?
+
+Almost all large companies use resume scanning software to get the best candidates for the job posted in a matter of time. In the section below, I’ll walk you through how to create a resume scanner using the Python programming language.
+
+
+<h1 style="color:#B03F3F">Resume Scanner using Python</h1>
+
+To create a resume scanner with Python, you first install a Python module known as resume-parser. If you have never used this module before then you can easily install it by using the pip command:
+```sh
+$ pip install resume-parser
+```
+
+### python code
+```sh
+def scan_resume(resume):
+    from resume_parse import resumeparse
+    data = resumeparse.read_file(resume)
+    for i, j in data.items():
+       print(f"{i}:>>{j}")
+
+scan_resume("roses.docx")
+```
+### Output
+```sh
+Producción:
+correo electrónico: >> support@thecleverprogrammer.com
+teléfono: >> 8587 ****** 
+total_exp: >> 2
+universidad: >> ['universidad musulmana de aligarh']
+designación: >> ['científico de datos', 'científico', 'garantía de calidad']
+grado: >> ['BCom']
+habilidades: >> ['predicción', 'organización', 'público', 'palabra', 'reseñas', 'reseñas de productos', 'spotify', 'habilidades interpersonales', 'ciencia de datos', 'facebook', 'correo electrónico ',' análisis de sentimiento ',' tutoriales ',' presión ',' compras ',' it ',' gestión presupuestaria ',' online ',' investigación ',' finanzas ',' linkedin ',' máscara ',' amazon ']
+```
