@@ -402,4 +402,29 @@ class AlarmHide(AlarmFrame):
 if __name__ == '__main__':
     AlarmHide(msecs=500).mainloop()
 ```
-[![TRY IT YOURSELF]((https://img.shields.io/static/v1?label=&message=TRY-IT-YOURSELF&color=<COLOR>)]()
+[![TRY IT YOURSELF](https://img.shields.io/static/v1?label=&message=TRY-IT-YOURSELF&color=<COLOR>)](https://github.com/facesar/python_codes/blob/master/alarm_hide_python/alarm_hide.py)
+
+
+# **Example-9:**
+## Button Background and foreground : Back Fore ground « GUI Tk « Python
+
+
+<h1 style="color:#B03F3F">Button Background and foreground</h1>
+
+### python code
+```sh
+from tkinter import *
+
+class JavaButton(Frame):
+    def __init__(self):
+        Frame.__init__(self)
+        self.pack()
+        stopper = Button(self, text='i know you', command=self.quit)
+        stopper.back()
+        stopper.config(bg='yellow', fg='blue', bd=15)
+
+if __init__ == '__main__':
+    JavaButton().mainloop()
+```
+
+[![TRY IT YOURSELF](https://img.shields.io/static/v1?label=&message=TRY-IT-YOURSELF&color=<COLOR>)]()
