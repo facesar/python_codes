@@ -321,7 +321,15 @@ a.head()
 # **Example-7:**
 ## Resume Scanner using Python
 
+### What is a Resume Scanner?# **Example-7:**
+## Resume Scanner using Python
+
 ### What is a Resume Scanner?
+
+Almost all large companies use resume scanning software to get the best candidates for the job posted in a matter of time. In the section below, I’ll walk you through how to create a resume scanner using the Python programming language.
+
+
+<h1 style="color:#B03F3F">Resume Scanner using Python</h1>
 
 Almost all large companies use resume scanning software to get the best candidates for the job posted in a matter of time. In the section below, I’ll walk you through how to create a resume scanner using the Python programming language.
 
@@ -354,3 +362,44 @@ designación: >> ['científico de datos', 'científico', 'garantía de calidad']
 grado: >> ['BCom']
 habilidades: >> ['predicción', 'organización', 'público', 'palabra', 'reseñas', 'reseñas de productos', 'spotify', 'habilidades interpersonales', 'ciencia de datos', 'facebook', 'correo electrónico ',' análisis de sentimiento ',' tutoriales ',' presión ',' compras ',' it ',' gestión presupuestaria ',' online ',' investigación ',' finanzas ',' linkedin ',' máscara ',' amazon ']
 ```
+# **Example-8:**
+## Alarm Hide : Animation « GUI Tk « Python
+
+
+<h1 style="color:#B03F3F">Alarm Hide</h1>
+
+### python code
+```sh
+from tkinter import *
+
+class AlarmFrame(Frame):
+    def repeater(self):
+        self.bell()
+        self.after(self.msecs, self.repeater)
+    def __init__(self, msecs=1000):
+        Frame.__init__(self)
+        self.msecs = msecs
+        self.pack()
+        stopper = Button(self, text='Stop the beeps!', command=self.quit)
+        stopper.pack()
+        stopper.config(bg='red', fg='white', bd=8)
+        self.stopper = stopper
+        self.repeater()
+
+class AlarmHide(AlarmFrame):
+    def repeater(self):
+        self.bell()
+        if self.shown:
+            self.stopper.pack_forget()
+        else:
+            self.stopper.pack()
+        self.shown = not self.shown
+        self.after(self.msecs, self.repeater)
+    def __init__(self, msecs=1000):
+        self.shown = 0
+        AlarmFrame.__init__(self, msecs)
+
+if __name__ == '__main__':
+    AlarmHide(msecs=500).mainloop()
+```
+[![TRY IT YOURSELF]((https://img.shields.io/static/v1?label=&message=TRY-IT-YOURSELF&color=<COLOR>)]()
